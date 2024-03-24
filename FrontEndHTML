@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>AuthenTech</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,10 +16,11 @@
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
-            padding: 50px 20px;
+            padding: 30px 20px;
         }
         h1 {
             color: #023020; /* dark green */
+            margin-bottom: 10px;
         }
         p {
             color: #023020; /* dark green */
@@ -38,14 +39,125 @@
         .btn:hover {
             background-color: #015249; /* slightly darker green on hover */
         }
+        /* Navigation Styles */
+        nav {
+            background-color: #023020; /* dark green */
+            padding: 10px 0;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #015249; /* slightly darker green on hover */
+        }
+/* IMAGE STYLING  */
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block; /* Ensures images are not treated as inline elements */
+            margin: 0 auto; /* Centers images */
+            border-radius: 10px; /* Adds rounded corners to images */
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #023020; /* dark green */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Hover Effects */
+        .btn:hover {
+            transform: scale(1.1); /* Slightly enlarges buttons on hover */
+        }
+
+        /* Typography */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+            font-size: 16px; /* Base font size */
+            line-height: 1.6; /* Line height for better readability */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            animation: fadeIn 1s ease; /* Fade-in animation for container */
+        }
+
+        /* Helpline Section */
+        .helpline {
+            background-color: #023020; /* dark green */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .helpline a {
+            color:#f5f5dc;
+            text-decoration: underline;
+        }
+        .helpline p {
+            color:#f5f5dc;
+        }
+
+        .logo {
+            max-width: 150px; !important; /* Adjust the size of the logo as needed */
+            height: auto;
+            display: block; /* Ensures the logo is centered */
+            margin: 0 auto; /* Centers the logo horizontally */
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple website where you can explore and learn.</p>
-        <a href="#" class="btn">Login</a>
-        <a href="#" class="btn">Sign Up</a>
+      <img src="Screenshot_2024-03-25_010140-removebg-preview.png"> <!-- Add your logo here -->
+      <h1>Welcome to AuthenTech</h1>
+      <p>Stop Counterfeits, Start Certainty!</p>
+      <a href="#" class="btn">Login</a>
+      <a href="#" class="btn">Sign Up</a>
     </div>
+
+    <footer>
+      <p>&copy; 2024 My Website. All Rights Reserved.</p>
+      <!-- Helpline Section -->
+      <div class="helpline">
+          <p>If you need assistance, contact us at - <a href="E22CSEU1390@bennett.edu.in">E22CSEU1390@bennett.edu.in</a>.</p>
+      </div>
+    </footer>
 </body>
 </html>
