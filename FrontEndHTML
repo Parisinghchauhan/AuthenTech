@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AuthenTech</title>
     <style>
+
+        /* Header Styles */
+        header {
+            background-color: #023020; /* dark green */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Added position relative for positioning the icon */
+        }
+
+        /* Logo Styles */
+        #sidebar-icon {
+            position: absolute;
+            top: 28px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+            width: 110px; /* Adjust the size of the icon */
+            height: auto;
+            cursor: pointer; /* Optional: Change cursor to pointer on hover */
+        }
+      
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -132,6 +152,44 @@
             display: block; /* Ensures the logo is centered */
             margin: 0 auto; /* Centers the logo horizontally */
         }
+
+        /* Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            left: -250px;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #023020; /* dark green */
+            transition: left 0.3s ease;
+            overflow-y: auto;
+            padding-top: 50px;
+            z-index: 999;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            padding: 10px 20px;
+            border-bottom: 1px solid #fff;
+        }
+
+        .sidebar li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar li:hover {
+            background-color: #015249; /* slightly darker green on hover */
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -147,9 +205,18 @@
     <div class="container">
       <img src="Screenshot_2024-03-25_010140-removebg-preview.png"> <!-- Add your logo here -->
       <h1>Welcome to AuthenTech</h1>
-      <p>Stop Counterfeits, Start Certainty!</p>
+      <b><p>Stop Counterfeits, Start Certainty!</p></b>
       <a href="#" class="btn">Login</a>
       <a href="#" class="btn">Sign Up</a>
+
+      <div class="sidebar">
+          <ul>
+              <li><a href="#">Advanced Authentication</a></li>
+              <li><a href="#">Real-time Tracking</a></li>
+              <li><a href="#">User-friendly Interface</a></li>
+          </ul>
+      </div>
+      <img id="sidebar-icon" src="Screenshot_2024-03-25_010140-removebg-preview (2).png" alt="Sidebar Icon">
     </div>
 
     <footer>
@@ -159,5 +226,20 @@
           <p>If you need assistance, contact us at - <a href="E22CSEU1390@bennett.edu.in">E22CSEU1390@bennett.edu.in</a>.</p>
       </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sidebar = document.querySelector('.sidebar');
+            const icon = document.querySelector('#sidebar-icon'); // Selecting by ID
+
+            icon.addEventListener('mouseover', function() {
+                sidebar.style.left = '0';
+            });
+
+            sidebar.addEventListener('mouseleave', function() {
+                sidebar.style.left = '-250px';
+            });
+        });
+    </script>
 </body>
 </html>
