@@ -211,9 +211,11 @@
 
       <div class="sidebar">
           <ul>
-              <li><a href="#">Advanced Authentication</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Verify Product</a></li>
               <li><a href="#">Real-time Tracking</a></li>
-              <li><a href="#">User-friendly Interface</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Feedback & Support</a></li>
           </ul>
       </div>
       <img id="sidebar-icon" src="Screenshot_2024-03-25_010140-removebg-preview (1).png" alt="Sidebar Icon">
