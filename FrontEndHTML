@@ -13,52 +13,7 @@
           padding: 10px 20px; /* Adjusted padding */
           text-align: center;
           position: relative;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
       }
-
-      /* Navigation Styles */
-      nav ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          display: flex;
-      }
-
-      nav ul li {
-          margin-right: 20px;
-      }
-
-      nav ul li:last-child {
-          margin-right: 0;
-      }
-
-      nav ul li a {
-          color: #fff;
-          text-decoration: none;
-          font-size: 16px;
-      }
-
-      /* Login and Sign-in Button Styles */
-      .login-btn {
-          background-color: #fff;
-          color: #023020; /* dark green */
-          border: none;
-          padding: 5px 10px;
-          border-radius: 5px;
-          cursor: pointer;
-      }
-
-        /* Logo Styles */
-        #sidebar-icon {
-            position: absolute;
-            top: 5px; /* Adjust the top position as needed */
-            left: 10px; /* Adjust the left position as needed */
-            width: 100px; /* Adjust the size of the icon */
-            height: auto;
-            cursor: pointer; /* Optional: Change cursor to pointer on hover */
-        }
       
         body {
             font-family: Arial, sans-serif;
@@ -195,7 +150,7 @@
             top: 0;
             width: 250px;
             height: 100%;
-            background-color: #023020; /* dark green */
+            background-color: #023020; 
             transition: left 0.3s ease;
             overflow-y: auto;
             padding-top: 50px;
@@ -225,12 +180,20 @@
             color: #fff;
             text-decoration: none;
         }
+        #sidebar-icon {
+            position: absolute;
+            top: 13px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+            width: 90px; /* Adjust the size of the icon */
+            height: auto;
+            cursor: pointer; /* Optional: Change cursor to pointer on hover */
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <img id="sidebar-icon" src="your-image-path.jpg" alt="Sidebar Icon">
+        <img id="sidebar-icon" src="Screenshot_2024-03-25_010140-removebg-preview (1).png" alt="Sidebar Icon">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -239,27 +202,12 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div>
-            <button class="login-btn">Login</button>
-            <button class="login-btn">Sign In</button>
-        </div>
     </header>
-  
-    <!-- <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            
-        </ul>
-    </nav> -->
 
     <div class="container">
-      <img src="Screenshot_2024-03-25_010140-removebg-preview.png"> <!-- Add your logo here -->
+      <img src="Screenshot_2024-03-25_010140-removebg-preview.png"> <!-- DO NOT MOVE IT Add your logo here -->
       <h1>Welcome to AuthenTech</h1>
       <b><p>Stop Counterfeits, Start Certainty!</p></b>
-      <!-- <a href="#" class="btn">Login</a>
-      <a href="#" class="btn">Sign Up</a> -->
 
       <div class="sidebar">
           <ul>
@@ -270,7 +218,6 @@
               <li><a href="#">Feedback & Support</a></li>
           </ul>
       </div>
-      <img id="sidebar-icon" src="Screenshot_2024-03-25_010140-removebg-preview (1).png" alt="Sidebar Icon">
     </div>
 
     <footer>
