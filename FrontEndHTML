@@ -208,6 +208,8 @@
       <img src="Screenshot_2024-03-25_010140-removebg-preview.png"> <!-- DO NOT MOVE IT Add your logo here -->
       <h1>Welcome to AuthenTech</h1>
       <b><p>Stop Counterfeits, Start Certainty!</p></b>
+        <a href="#" class="btn">Login</a>
+        <a href="#" class="btn">Sign Up</a>
 
       <div class="sidebar">
           <ul>
