@@ -1,4 +1,4 @@
-# Authenticity Checker
+# Authentech
 
 ## Overview
 The Authenticity Checker is a web application designed to verify online purchased products through advanced techniques such as production behavior analysis, price tracking, and image recognition. It ensures the legitimacy of items, instilling confidence in users and retailers.
