@@ -1,6 +1,5 @@
-# Authentech
+# AuthenTech
 
-## Overview
 AuthenTech is a web application designed to verify online purchased products through advanced techniques such as production behavior analysis, price tracking, and image recognition. It ensures the legitimacy of items, instilling confidence in users and retailers.
 
 ## Features
@@ -9,6 +8,12 @@ AuthenTech is a web application designed to verify online purchased products thr
 - **Retailer Verification:** Retailers verified through alternative means.
 - **User-Friendly Interface:** Intuitive design for effortless navigation.
 - **Feedback and Reporting:** Enables user feedback and discrepancy reporting.
+- **Dynamic Image Processing:** Supports rotation, zoom, and preview features for accurate verification.
+- **Neural Network Seller Authentication:** Utilizes a trained neural network model to authenticate sellers based on their previous sales performance.
+- **Real-Time Updates:** Provides real-time feedback and notifications during the verification process.
+- **User Authentication:** Secure authentication system to protect user data and interactions.
+- **Database Integration:** Stores user data, product information, and seller profiles in a backend database.
+- **RESTful API:** Implements RESTful APIs for handling image uploads, verification processes, and seller authentication.
 
 ### Prerequisites:
 - Python (3.6+), Django, TensorFlow, OpenCV
@@ -21,3 +26,30 @@ AuthenTech is a web application designed to verify online purchased products thr
 5. Receive results on authenticity status.
 6. Provide feedback or report discrepancies.
 
+## Technologies Used:
+### Frontend:
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend:
+- Node.js
+- Express.js
+- MongoDB
+
+### Image Processing:
+- OpenCV
+- TensorFlow.js
+
+### Neural Network Framework:
+- TensorFlow
+
+### Authentication:
+- JSON Web Tokens (JWT)
+
+### Database:
+- MongoDB Atlas
+
+### Deployment:
+- Heroku
