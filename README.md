@@ -10,7 +10,7 @@ AuthenTech is a web application designed to verify online purchased products thr
 - **Feedback and Reporting:** Enables user feedback and discrepancy reporting.
 - **Dynamic Image Processing:** Supports rotation, zoom, and preview features for accurate verification.
 - **Neural Network Seller Authentication:** Utilizes a trained neural network model to authenticate sellers based on their previous sales performance.
-- **Real-Time Updates:** Provides real-time feedback and notifications during the verification process.
+- **Real-Time Updates:** Provides real-time feedback during the verification process.
 - **User Authentication:** Secure authentication system to protect user data and interactions.
 - **Database Integration:** Stores user data, product information, and seller profiles in a backend database.
 - **RESTful API:** Implements RESTful APIs for handling image uploads, verification processes, and seller authentication.
