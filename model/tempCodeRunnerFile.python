@@ -1,0 +1,20 @@
+import tensorflow as tf
+import numpy as np
+import matplotlib as plt
+import cv2
+import os
+
+first_layer = tf.keras.layers.experimental.preprocessing.RandomFlip('horizontal')
+layer_2 = tf.keras.layers.Conv2D(64,(3,3), activation = 'relu', input_shape= (32,32,3))
+layer_3 = tf.keras.layers.MaxPool2D(2,2)
+layer_4 = tf.keras.layers.Conv2D(64,(3,3), activation='relu', input_shape=(32,32,3))
+layer_5 = tf.keras.layers.MaxPool2D(2,2)
+layer_6 = tf.keras.layers.Conv2D(64,(3,3), activation='relu', input_shape=(32,32,3))
+layer_7 = tf.keras.layers.MaxPool2D(2,2)
+layer_8 = tf.keras.layers.Flatten()
+layer_9 = tf.keras.layers.Dense(128, activation = 'relu')
+layer_10 = tf.keras.layers.Dense(10, activation = 'softmax')
+
+model = tf.keras.Sequential([first_layer, layer_2,layer_3,layer_4,layer_5,layer_6,layer_7,layer_8,layer_9,layer_10])
+model.compile(optimizer='adam', loss= 'BinaryCrossentropy', metrics=['abc'])
+# model.fit(<train_dataset>, epochs=,validation_dataset)
