@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tissot",
+      "points": [
+        [
+          59.5130890052356,
+          80.45549738219896
+        ],
+        [
+          397.2094240837696,
+          358.4659685863874
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\200_76a225c1.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}

@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "breitling",
+      "points": [
+        [
+          77.31413612565444,
+          65.79581151832461
+        ],
+        [
+          393.5445026178011,
+          330.717277486911
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\189_ccd2b4f5.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}

@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "patek philippe",
+      "points": [
+        [
+          100.87434554973822,
+          85.1675392670157
+        ],
+        [
+          378.88481675392666,
+          310.82198952879577
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\196_d757f8b0.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}

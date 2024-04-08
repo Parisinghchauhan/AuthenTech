@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "audemars piguet",
+      "points": [
+        [
+          17.25477707006371,
+          88.13694267515923
+        ],
+        [
+          459.9299363057325,
+          505.3343949044586
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\195_68f53242.jpg",
+  "imageData": null,
+  "imageHeight": 575,
+  "imageWidth": 474
+}

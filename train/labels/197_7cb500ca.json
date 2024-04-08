@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "rolex",
+      "points": [
+        [
+          40.14136125654451,
+          78.8848167539267
+        ],
+        [
+          404.01570680628265,
+          396.1623036649214
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\197_7cb500ca.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}

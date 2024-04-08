@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "maurice lacroix",
+      "points": [
+        [
+          4.123287671232873,
+          27.047945205479458
+        ],
+        [
+          407.7762557077625,
+          344.8561643835617
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\197_2f65460e.jpg",
+  "imageData": null,
+  "imageHeight": 413,
+  "imageWidth": 474
+}

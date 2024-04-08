@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "rado",
+      "points": [
+        [
+          68.93717277486911,
+          100.35078534031413
+        ],
+        [
+          398.78010471204186,
+          339.0942408376963
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\190_2187603a.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}

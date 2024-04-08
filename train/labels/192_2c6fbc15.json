@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "omega",
+      "points": [
+        [
+          51.65968586387436,
+          50.612565445026185
+        ],
+        [
+          417.1047120418848,
+          397.7329842931937
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\192_2c6fbc15.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}

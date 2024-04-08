@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "breitling",
+      "points": [
+        [
+          24.958115183246093,
+          32.81151832460734
+        ],
+        [
+          393.5445026178011,
+          362.6544502617801
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\197_45e2face.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}

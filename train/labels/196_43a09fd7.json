@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "rolex",
+      "points": [
+        [
+          83.07329842931938,
+          83.07329842931937
+        ],
+        [
+          344.85340314136124,
+          350.08900523560203
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\196_43a09fd7.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}

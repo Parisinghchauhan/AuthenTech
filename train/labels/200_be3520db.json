@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "rado",
+      "points": [
+        [
+          54.27748691099478,
+          132.28795811518324
+        ],
+        [
+          401.3979057591623,
+          328.0994764397905
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\200_be3520db.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}

@@ -1,0 +1,28 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "vacheron constantin",
+      "points": [
+        [
+          53.75392670157069,
+          185.6910994764398
+        ],
+        [
+          418.67539267015707,
+          449.56544502617794
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\images\\189_9521980e.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 474
+}
