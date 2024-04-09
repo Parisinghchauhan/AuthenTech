@@ -1,8 +1,20 @@
 import tensorflow as tf
-import numpy as np
-import matplotlib as plt
-import cv2
-import os
+
+gpus = tf.config.experimental.list_physical_devices('GPU')
+for gpu in gpus: 
+    tf.config.experimental.set_memory_growth(gpu, True)
+tf.config.list_physical_devices('GPU')
+
+
+train_images = tf.data.Dataset.list_files('C:\\Users\\admin\\Desktop\\github\\Authentic\\data\\train\\images\\*.jpg', shuffle=False)
+def load_image(x): 
+    byte_img = tf.io.read_file(x)
+    img = tf.io.decode_jpeg(byte_img)
+    return img
+train_data = train_images.map(load_image)
+
+
+train_labels = tf.data.Dataset.list_files('C:\\Users\\admin\\Desktop\\github\\Authentic\\data\\train\\labels\\*.json')
 
 first_layer = tf.keras.layers.experimental.preprocessing.RandomFlip('horizontal')
 layer_2 = tf.keras.layers.Conv2D(64,(3,3), activation = 'relu', input_shape= (32,32,3))
@@ -17,4 +29,4 @@ layer_10 = tf.keras.layers.Dense(10, activation = 'softmax')
 
 model = tf.keras.Sequential([first_layer, layer_2,layer_3,layer_4,layer_5,layer_6,layer_7,layer_8,layer_9,layer_10])
 model.compile(optimizer='adam', loss= 'BinaryCrossentropy', metrics=['abc'])
-# model.fit(<train_dataset>, epochs=,validation_dataset)
+model.fit(train_images, train_labels, epochs= 10)
