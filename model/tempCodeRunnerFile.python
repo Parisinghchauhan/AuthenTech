@@ -1,32 +1,45 @@
 import tensorflow as tf
-
+import json
+import numpy as np
+from tensorflow import keras
 gpus = tf.config.experimental.list_physical_devices('GPU')
 for gpu in gpus: 
     tf.config.experimental.set_memory_growth(gpu, True)
 tf.config.list_physical_devices('GPU')
 
 
-train_images = tf.data.Dataset.list_files('C:\\Users\\admin\\Desktop\\github\\Authentic\\data\\train\\images\\*.jpg', shuffle=False)
+train_images = tf.data.Dataset.list_files('C:\\Users\\priya\\OneDrive\\Documents\\GitHub\\Authentic\\data\\train\\images', shuffle=False)
 def load_image(x): 
     byte_img = tf.io.read_file(x)
     img = tf.io.decode_jpeg(byte_img)
     return img
 train_data = train_images.map(load_image)
 
+def load_labels(label_path):
+    with open(label_path.numpy(), 'r',encoding="utf-8") as f:
+        label = json.load(f)
+    return[label['class']], label['bbox']
 
-train_labels = tf.data.Dataset.list_files('C:\\Users\\admin\\Desktop\\github\\Authentic\\data\\train\\labels\\*.json')
+train_labels = tf.data.Dataset.list_files('C:\\Users\\priya\\OneDrive\\Documents\\GitHub\\Authentic\\data\\train\\labels', shuffle=False)
+train_labels = train_labels.map(lambda x: tf.py_function(load_labels, [x], [tf.uint8, tf.float16])) 
+train = tf.data.Dataset.zip((train_images, train_labels))
+train = train.shuffle(5000)
+train = train.batch(8)
+train = train.prefetch(4)
 
+rescale=tf.keras.layers.experimental.preprocessing.Rescaling(1./127.5,offset=-1)
+inputs=tf.keras.Input(shape=(96,96,3))
 first_layer = tf.keras.layers.experimental.preprocessing.RandomFlip('horizontal')
-layer_2 = tf.keras.layers.Conv2D(64,(3,3), activation = 'relu', input_shape= (32,32,3))
+layer_2 = tf.keras.layers.Conv2D(64,(3,3), activation = 'relu',input_shape=(32,32,1))
 layer_3 = tf.keras.layers.MaxPool2D(2,2)
-layer_4 = tf.keras.layers.Conv2D(64,(3,3), activation='relu', input_shape=(32,32,3))
+layer_4 = tf.keras.layers.Conv2D(64,(3,3), activation='relu',input_shape=(32,32,1))
 layer_5 = tf.keras.layers.MaxPool2D(2,2)
-layer_6 = tf.keras.layers.Conv2D(64,(3,3), activation='relu', input_shape=(32,32,3))
+layer_6 = tf.keras.layers.Conv2D(64,(3,3), activation='relu',input_shape=(32,32,1))
 layer_7 = tf.keras.layers.MaxPool2D(2,2)
 layer_8 = tf.keras.layers.Flatten()
 layer_9 = tf.keras.layers.Dense(128, activation = 'relu')
 layer_10 = tf.keras.layers.Dense(10, activation = 'softmax')
 
-model = tf.keras.Sequential([first_layer, layer_2,layer_3,layer_4,layer_5,layer_6,layer_7,layer_8,layer_9,layer_10])
+model = tf.keras.Sequential([rescale,inputs,layer_2,layer_3,layer_4,layer_5,layer_6,layer_7,layer_8,layer_9,layer_10])
 model.compile(optimizer='adam', loss= 'BinaryCrossentropy', metrics=['abc'])
-model.fit(train_images, train_labels, epochs= 10)
+model.fit(train,epochs= 10)
