@@ -28,9 +28,13 @@ Keras is used as a high-level neural networks API, which is now integrated with 
 Counterfeiting poses significant challenges to businesses and consumers alike, leading to economic losses and potential safety risks. Authentech addresses this issue by utilizing deep learning techniques to automate the detection process.
 
 **Key Components**
+
 Data Collection: The project involves collecting a diverse dataset consisting of images of both counterfeit and original items. These images serve as the basis for training the machine learning model.
+
 Model Training: TensorFlow is used to train a CNN model to classify images into two categories: counterfeit and original. The model is trained on the collected dataset to learn features that distinguish between the two classes.
+
 Evaluation: The performance of the trained model is evaluated using various metrics such as accuracy, precision, recall, and F1-score. This step ensures that the model can effectively differentiate between counterfeit and original items.
+
 Deployment: Once trained and evaluated, the model can be deployed in real-world scenarios, such as retail stores or manufacturing facilities, to automatically identify counterfeit products.
 
 
