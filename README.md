@@ -42,6 +42,9 @@ Deployment: Once trained and evaluated, the model can be deployed in real-world 
 The primary objectives of the AuthenTech project are as follows:
 
 Accuracy: Develop a machine learning model with high accuracy in distinguishing between counterfeit and original items.
+
 Robustness: Create a robust model that can generalize well to unseen data and adapt to different types of counterfeit products.
+
 Efficiency: Design an efficient solution that can process images quickly, making it suitable for real-time applications.
+
 Impact: Contribute to the fight against counterfeiting by providing businesses and consumers with a reliable tool for identifying counterfeit products.
