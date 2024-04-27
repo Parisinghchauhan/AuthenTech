@@ -1,4 +1,6 @@
-AuthenTech: Counterfeit Detection using TensorFlow Object Detection
+""AuthenTech: Counterfeit Detection using TensorFlow Object Detection""
+
+
 AuthenTech is a project aimed at developing a machine learning model to distinguish between counterfeit and original items. By leveraging convolutional neural networks (CNNs) and TensorFlow, the project aims to create a robust solution for identifying counterfeit products based on images.
 
 Tech Stack
