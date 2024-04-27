@@ -1,5 +1,5 @@
-Authentech: Counterfeit Detection using TensorFlow Object Detection
-Authentech is a project aimed at developing a machine learning model to distinguish between counterfeit and original items. By leveraging convolutional neural networks (CNNs) and TensorFlow, the project aims to create a robust solution for identifying counterfeit products based on images.
+AuthenTech: Counterfeit Detection using TensorFlow Object Detection
+AuthenTech is a project aimed at developing a machine learning model to distinguish between counterfeit and original items. By leveraging convolutional neural networks (CNNs) and TensorFlow, the project aims to create a robust solution for identifying counterfeit products based on images.
 
 Tech Stack
 TensorFlow: TensorFlow is used as the primary deep learning framework for building and training the convolutional neural network (CNN) model.
@@ -17,8 +17,10 @@ Data Collection: The project involves collecting a diverse dataset consisting of
 Model Training: TensorFlow is used to train a CNN model to classify images into two categories: counterfeit and original. The model is trained on the collected dataset to learn features that distinguish between the two classes.
 Evaluation: The performance of the trained model is evaluated using various metrics such as accuracy, precision, recall, and F1-score. This step ensures that the model can effectively differentiate between counterfeit and original items.
 Deployment: Once trained and evaluated, the model can be deployed in real-world scenarios, such as retail stores or manufacturing facilities, to automatically identify counterfeit products.
+
+
 Objectives
-The primary objectives of the Authentech project are as follows:
+The primary objectives of the AuthenTech project are as follows:
 
 Accuracy: Develop a machine learning model with high accuracy in distinguishing between counterfeit and original items.
 Robustness: Create a robust model that can generalize well to unseen data and adapt to different types of counterfeit products.
