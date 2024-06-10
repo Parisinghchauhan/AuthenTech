@@ -20,11 +20,17 @@ Keras:
 High-level neural networks API integrated with TensorFlow.
 
 **Objectives**
+
 Accuracy: High accuracy in distinguishing counterfeit items.
+
 Robustness: Generalize well to unseen data.
+
 Efficiency: Quick image processing for real-time applications.
+
 Impact: Provide a reliable tool against counterfeiting.
 
 **Prerequisites**
+
 Install TensorFlow: pip install tensorflow
+
 Install OpenCV: pip install opencv-python
